@@ -20,6 +20,7 @@ from helix import views
 
 router = routers.DefaultRouter()
 router.register(r'questions', views.QuestionView, 'question')
+router.register(r'comments', views.CommentView, 'comment')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
